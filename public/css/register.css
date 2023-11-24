@@ -21,11 +21,18 @@ body{
 
 
 /* HEADER */
+
 header{
     width: 100%;
-    height: 30vh;
+    padding-block: 16px;
+    padding-inline: 16px;
     position: fixed;
     top: 0;
+    z-index: 1000;
+}
+
+header p i{
+    background-color: white
 }
 
 .logo{
@@ -41,6 +48,7 @@ header{
         transform: scale(1);
     }
 }
+
 
 .busqueda{
     width: 30vw;
@@ -76,7 +84,11 @@ h3.compraCuotas{
     font-size: 12px;
     text-align: center;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 5vh;
+}
+
+.compra-cuotas, .hamburguesa{
+    margin-top: 13%;
 }
 
 .listas{
@@ -115,7 +127,7 @@ h3.compraCuotas{
 /* MAIN */
 
 main{
-    margin-top: 30vh;
+    margin-top: 160px;
 }
 
 h1{
@@ -204,9 +216,6 @@ footer i{
 /* Visualizacion en tablets */
 @media (min-width: 770px) {
     /* HEADER */
-    header{
-        height: 30%;
-    }
     .burger-menu{
         display: none;
     }
@@ -238,7 +247,7 @@ footer i{
     }
     /* MAIN */
 main{
-    margin-top: 30vh;
+    margin-top: 170px;
 }
     
 }
@@ -246,14 +255,8 @@ main{
 /* Visualizacion en PC */
 @media (min-width: 1200px) {
     /* HEADER */
-
-    header{
-        height: 25vh;
-    }
-
     .listas, .header-top-bar{
-        display: flex;
- 
+        display: flex; 
         margin: auto;
     }
 
